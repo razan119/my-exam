@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ContextDBStoreContainer" CdmEntityContainer="ContextDatabase">
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="ContextDB.Activity">
+        <MappingFragment StoreEntitySet="Activities">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="CreatorId" ColumnName="CreatorId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guests">
+      <EntityTypeMapping TypeName="ContextDB.Guest">
+        <MappingFragment StoreEntitySet="Guests">
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ContextDB.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="PasswordConfirmation" ColumnName="PasswordConfirmation" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
